@@ -87,7 +87,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', loginpage.index);
+app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/register',registerpage.register);
 app.get('/home',homepage.home);

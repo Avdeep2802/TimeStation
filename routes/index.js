@@ -63,15 +63,16 @@ exports.authenticate = function(req, res){
 
 exports.index = function(req, res){
 	
-	sess = req.session;
+	//sess = req.session;
 	
-	if(req.cookies.cook) {
-		console.log("home vala redirect chal ya");
-	    res.redirect('/home');
-	  } else {
-		  console.log("home vala redirect nae chalya ");
-		  res.render('index',{title : "Login To Continue"} );
-	  }
+	// if(req.cookies.cook) {
+	// 	console.log("home vala redirect chal ya");
+	//     res.redirect('/home');
+	//   } else {
+	// 	  console.log("home vala redirect nae chalya ");
+	// 	  res.render('index',{title : "Login To Continue"} );
+	//   }
+	res.render('index',{title : "Login To Continue"} );
 };
 
 exports.login = function(req, res){
